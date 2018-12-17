@@ -1,0 +1,54 @@
+Format: 1.8
+Date: Sun, 11 Feb 2018 22:00:18 +0100
+Source: squid3
+Binary: squid3 squid squid-dbg squid-common squidclient squid-cgi squid-purge
+Architecture: armhf all
+Version: 3.5.23-5+deb9u1
+Distribution: stretch-security
+Urgency: high
+Maintainer: Luigi Gangitano <luigi@debian.org>
+Changed-By: Salvatore Bonaccorso <carnil@debian.org>
+Description:
+ squid      - Full featured Web Proxy cache (HTTP proxy)
+ squid-cgi  - Full featured Web Proxy cache (HTTP proxy) - control CGI
+ squid-common - Full featured Web Proxy cache (HTTP proxy) - common files
+ squid-dbg  - Full featured Web Proxy cache (HTTP proxy) - Debug symbols
+ squid-purge - Full featured Web Proxy cache (HTTP proxy) - control utility
+ squid3     - Transitional package
+ squidclient - Full featured Web Proxy cache (HTTP proxy) - control utility
+Closes: 888719 888720
+Changes:
+ squid3 (3.5.23-5+deb9u1) stretch-security; urgency=high
+ .
+   * Non-maintainer upload by the Security Team.
+   * ESI: make sure endofName never exceeds tagEnd (CVE-2018-1000024)
+     (Closes: #888719)
+   * Fix indirect IP logging for transactions without a client connection
+     (CVE-2018-1000027) (Closes: #888720)
+Checksums-Sha1:
+ e7f5ec398a53407e52881eaafc4ddb0b03bfea11 160932 squid-cgi_3.5.23-5+deb9u1_armhf.deb
+ c8de8a0f8a62f257c06ce8207898bd1d6305c45c 285354 squid-common_3.5.23-5+deb9u1_all.deb
+ e45eb2bb3a1af4d3f06514766e53ff077dfcb99a 24834058 squid-dbg_3.5.23-5+deb9u1_armhf.deb
+ 4244c81d3525b4df184496e125fe2ef09e93922d 156154 squid-purge_3.5.23-5+deb9u1_armhf.deb
+ 580d93cc316b98d807de19a67c3918c32cdc5fe4 138970 squid3_3.5.23-5+deb9u1_all.deb
+ faf7cec32f66ce65e29386379c7577a976dc0802 8615 squid3_3.5.23-5+deb9u1_armhf.buildinfo
+ e71aea7742c7fd1d733f872c58318a6c424f5e35 2131344 squid_3.5.23-5+deb9u1_armhf.deb
+ 2ea886ec477465ac543b0be84fa74b9320c9422d 163838 squidclient_3.5.23-5+deb9u1_armhf.deb
+Checksums-Sha256:
+ 22d087a495a49025092d039ddec9d7bcbad57faa0dcd1f321828f0f3cceaee8a 160932 squid-cgi_3.5.23-5+deb9u1_armhf.deb
+ 83592a0506d2d80a9aedc250c525774c45daba01707aedb1320a0bc2fdd72c92 285354 squid-common_3.5.23-5+deb9u1_all.deb
+ bf8fb0b9ff1ddf229935f8fbf3f007d00a58dedc149f768754c851e3f40f0c27 24834058 squid-dbg_3.5.23-5+deb9u1_armhf.deb
+ 9341ecd1dacbcc747ef7cf78c33dbf2e104837247cd5d5da94f794fa5bcff925 156154 squid-purge_3.5.23-5+deb9u1_armhf.deb
+ 47cbc83359ed1b4f8d7b071d19ff8b4fc0e7174c4134c2190846568f49dcd9fb 138970 squid3_3.5.23-5+deb9u1_all.deb
+ e80f86c70cc99a4b032eb424dee365bad2df34eae1b15e0569d88bb1da3c0d75 8615 squid3_3.5.23-5+deb9u1_armhf.buildinfo
+ 17499cd5795c9367e3f9b8a345a1f48fc72343430515f2fd01f41b70226d0fc5 2131344 squid_3.5.23-5+deb9u1_armhf.deb
+ d63a5007bc4d762f74182852520ff39901e4183462a1218c5ec51e57fb2261be 163838 squidclient_3.5.23-5+deb9u1_armhf.deb
+Files:
+ d96d5240cd3a61683bc780cdf8887d5f 160932 web optional squid-cgi_3.5.23-5+deb9u1_armhf.deb
+ c0faf3cbf4b5c6f1a2073f70ab44a28e 285354 web optional squid-common_3.5.23-5+deb9u1_all.deb
+ e9ab4a3f6b1a3956dbf4479607d791f5 24834058 debug extra squid-dbg_3.5.23-5+deb9u1_armhf.deb
+ e58a041efa8e2af2a499c5f04ce87602 156154 web optional squid-purge_3.5.23-5+deb9u1_armhf.deb
+ 16fca3e8b34fe02289bd197d57ea4df7 138970 oldlibs extra squid3_3.5.23-5+deb9u1_all.deb
+ ab510ef3fc15942b7f29a24cdbe2a7b3 8615 web optional squid3_3.5.23-5+deb9u1_armhf.buildinfo
+ b90261c40ffb0d24ba440ada58602675 2131344 web optional squid_3.5.23-5+deb9u1_armhf.deb
+ fbce9256db550da79d45c5282ef14575 163838 web optional squidclient_3.5.23-5+deb9u1_armhf.deb
